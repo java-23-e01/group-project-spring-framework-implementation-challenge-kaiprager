@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>User Form</title>
+</head>
+<body>
+  <h1>User Form</h1>
+  <p>Please fill out the form.</p>
+  <form th:action="@{/userList}" method="POST">
+      <input type="text" name="firstName" placeholder="Enter your first name.">
+      <br><br>
+      <input type="text" name="lastName" placeholder="Enter your last name.">
+      <br><br>
+      <input type="text" name="email" placeholder="Enter your email.">
+      <br><br>
+      <input type="submit">
+  </form>
+</body>
+</html>
